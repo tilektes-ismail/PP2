@@ -5,7 +5,7 @@ def my_function():
   
   
 def my_function2():
-  print("Hello from a function")
+  print("Hello from a function2")
 
 my_function2()
 
@@ -21,6 +21,6 @@ print(fahrenheit_to_celsius(50))
 
 
 def get_greeting():
-  return "Hello from a function"
+  return "Hello from a function3"
 
 print(get_greeting())

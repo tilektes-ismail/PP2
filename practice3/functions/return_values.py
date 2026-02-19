@@ -3,6 +3,7 @@ def greetings(name):
 
 resust = greetings("Beksultan")
 
+print(resust)
 def add(a, b):
     return a + b
 
