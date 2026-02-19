@@ -11,3 +11,7 @@ class Square(Shape):
 
 sq = Square(5)
 print(f"Square area: {sq.area()}")
+
+# Method overriding is an OOP concept 
+# where a child class provides its own implementation
+#  of a method that already exists in the parent class.
