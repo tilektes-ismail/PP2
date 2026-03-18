@@ -1,2 +1,6 @@
 # PP2
-Uploaded practice 3 enjoy:)
+Updated repo check it and enjoy
+
+Fixes:
+
+Added a new directory practice 6
