@@ -3,4 +3,4 @@ Updated repo check it and enjoy
 
 Fixes:
 
-Added a new directory practice 6
+Added a new directory practice 8
