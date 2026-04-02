@@ -12,7 +12,7 @@ def main():
         print("CSV data imported.")
 
         # 3. Add a manual contact (CRUD: Create)
-        add_contact("Gemini", "AI", "000-111-2222")
+        add_contact("Salah", "Egyptian King", "000-111-2222")
         
         # 4. Show results (CRUD: Read)
         print("\n--- Current Phonebook Contents ---")
