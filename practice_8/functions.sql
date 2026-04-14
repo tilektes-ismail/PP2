@@ -1,7 +1,3 @@
--- ============================================================
--- Practice 8: PhoneBook Functions
--- ============================================================
-
 -- 1. Function that returns all records matching a pattern
 --    (searches by part of first_name, username, or phone)
 -- ============================================================
@@ -36,10 +32,3 @@ END;
 $$;
 
 
--- ============================================================
--- Usage examples:
---   SELECT * FROM search_contacts('Bek');
---   SELECT * FROM search_contacts('+770');
---   SELECT * FROM get_contacts_paginated(10, 0);   -- page 1
---   SELECT * FROM get_contacts_paginated(10, 10);  -- page 2
--- ============================================================

@@ -1,6 +1,3 @@
--- ============================================================
--- Practice 8: PhoneBook Procedures
--- ============================================================
 
 -- 2. Procedure: insert a new user by name and phone.
 --    If the username already exists → update their phone.
@@ -47,10 +44,11 @@ BEGIN
     total := array_length(p_first_names, 1);
 
     FOR i IN 1..total LOOP
-        -- Validate: phone must start with + and contain 11-13 digits
-        IF p_phones[i] ~ '^\+[0-9]{10,12}$' THEN
+        -- Validate: phone must contain digits only (spaces and dashes are allowed and stripped)
+        -- Strip spaces and dashes before validating, then store the cleaned version
+        IF regexp_replace(p_phones[i], '[\s\-]', '', 'g') ~ '^[0-9]+$' THEN
             INSERT INTO contacts (first_name, username, phone)
-            VALUES (p_first_names[i], p_usernames[i], p_phones[i])
+            VALUES (p_first_names[i], p_usernames[i], regexp_replace(p_phones[i], '[\s\-]', '', 'g'))
             ON CONFLICT (username) DO UPDATE
                 SET first_name = EXCLUDED.first_name,
                     phone      = EXCLUDED.phone;
@@ -98,16 +96,3 @@ END;
 $$;
 
 
--- ============================================================
--- Usage examples:
---   CALL upsert_contact('Aibek', 'aibek01', '+77001234567');
---
---   CALL insert_many_contacts(
---       ARRAY['Ali','Zara','Bad'],
---       ARRAY['ali1','zara2','bad3'],
---       ARRAY['+77011112233', '+77022223344', '12345']  -- last one is invalid
---   );
---
---   CALL delete_contact(p_username => 'aibek01');
---   CALL delete_contact(p_phone => '+77001234567');
--- ============================================================
