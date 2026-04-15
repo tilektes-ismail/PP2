@@ -1,19 +1,13 @@
-"""
-Ball - Practice 9 Task 3.3
-Encapsulates the red ball's state and movement logic.
-"""
+
 
 import pygame
 
 
 class Ball:
-    """
-    A red ball that moves with arrow keys.
-    Stays within screen boundaries.
-    """
+   
 
     RADIUS = 25
-    DIAMETER = RADIUS * 2  # = 50 px as specified
+    DIAMETER = RADIUS * 2  
     STEP = 20              # pixels per key press
     COLOR = (220, 50, 50)
     OUTLINE = (160, 20, 20)
@@ -27,12 +21,7 @@ class Ball:
         self.y = screen_height // 2
 
     def move(self, direction):
-        """
-        Move the ball by STEP pixels in the given direction.
-        Ignores moves that would take the ball off-screen.
-
-        direction: 'up' | 'down' | 'left' | 'right'
-        """
+        
         new_x, new_y = self.x, self.y
 
         if direction == "up":

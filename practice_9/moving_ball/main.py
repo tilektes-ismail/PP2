@@ -1,8 +1,4 @@
-"""
-Moving Ball Game - Practice 9 Task 3.3
-A red ball (50x50, radius 25) on a white background.
-Move with arrow keys (20px per press). Cannot leave screen.
-"""
+
 
 import pygame
 import sys
