@@ -41,7 +41,6 @@ class Ball:
         # else: silently ignore (as per requirements)
 
     def draw(self, surface):
-        """Draw the ball with a subtle 3D highlight effect."""
         # Shadow
         pygame.draw.circle(surface, (180, 180, 180),
                            (self.x + 3, self.y + 3), self.RADIUS)
