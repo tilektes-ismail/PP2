@@ -17,7 +17,7 @@ SCREEN_HEIGHT = 400
 CELL = 10  # Each snake/food block is 10x10 pixels
 
 # Starting speed and level
-SPEED = 10
+SPEED = 5
 LEVEL = 1
 SCORE = 0
 FOOD_PER_LEVEL = 3  # Foods needed to advance to next level
