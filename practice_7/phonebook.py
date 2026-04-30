@@ -1,6 +1,6 @@
 import psycopg2
 import csv
-from connect import get_connection
+from TSIS.TSIS_1.connect import get_connection
 
 # 1. Insert from CSV
 def insert_from_csv():
