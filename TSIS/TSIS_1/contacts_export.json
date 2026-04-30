@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "alice@gmail.com",
+    "birthday": "1990-05-12",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77011234567",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "first_name": "Bob",
+    "last_name": "Jones",
+    "email": "bob@work.com",
+    "birthday": "1985-11-23",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77029876543",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "first_name": "Carol",
+    "last_name": "White",
+    "email": "carol@gmail.com",
+    "birthday": "1993-03-08",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77031112233",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "first_name": "David",
+    "last_name": "Brown",
+    "email": "david@gmail.com",
+    "birthday": "1988-07-19",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77044445566",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "first_name": "Eve",
+    "last_name": "Davis",
+    "email": "eve@yahoo.com",
+    "birthday": "1995-01-30",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77055557788",
+        "type": "mobile"
+      }
+    ]
+  }
+]

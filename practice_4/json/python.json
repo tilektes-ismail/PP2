@@ -1,0 +1,29 @@
+{
+  "name": "Alice",
+
+  "age": 25,
+  "price": 19.99,
+  "temperature": -5,
+
+  "is_student": true,
+  "is_admin": false,
+
+  "user": {
+    "name": "Alice",
+    "age": 25
+  },
+
+  "numbers": [1, 2, 3, 4],
+  "colors": ["red", "blue", "green"],
+
+  "users": {
+    "id": 1,
+    "name": "Alice",
+    "is_active": true,
+    "roles": ["admin", "editor"],
+    "address": {
+      "city": "Almaty",
+      "zip": 50000
+    }
+  }
+}

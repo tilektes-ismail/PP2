@@ -1,0 +1,1 @@
+Music player with a minimalistic GUI
